@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skerdi — Simple Static Website</title>
+  <meta name="description" content="Skerdi — clean, fast, and responsive static site template for skerdi.net" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">Skerdi</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="wrap hero-inner">
+        <h1>Skerdi</h1>
+        <p class="lead">A clean, responsive starter site for skerdi.net. Fast to deploy, easy to customize.</p>
+        <div class="hero-cta">
+          <button id="ctaButton" class="btn">Get started</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-label="About">
+      <div class="wrap">
+        <h2>About Skerdi</h2>
+        <p>This is a simple static site template tailored for skerdi.net. Use it as a brochure, landing page, or a base for a small project.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section services" aria-label="Services">
+      <div class="wrap grid-3">
+        <div class="card">
+          <h3>Fast & Lightweight</h3>
+          <p>Built with semantic HTML and minimal CSS for great performance and accessibility.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Layouts scale from mobile to desktop — no framework required.</p>
+        </div>
+        <div class="card">
+          <h3>Easy to Host</h3>
+          <p>Deploy to GitHub Pages, Netlify, Vercel, or any static host in seconds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-label="Contact">
+      <div class="wrap" style="text-align:center;">
+        <h2>Contact / Visit</h2>
+        <!-- Replaced the contact form with a single button as requested -->
+        <p class="lead">Click the button below to open skerdi.net in a new tab.</p>
+        <button id="visitBtn" class="btn" type="button">Visit skerdi.net</button>
+        <p id="buttonStatus" class="form-status" aria-live="polite" style="margin-top:0.75rem;color:var(--muted)"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Skerdi — Built with a simple static template.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
